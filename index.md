@@ -167,7 +167,6 @@ tableの行`<tr>`は、親の`<table>`に対して`border-collapse: collapse;`�
 ```
 
 2つめの方法を取るのであれば、`line-height`を与えないこととボタンのテキストを垂直方向に中央寄せするのに`padding`*だけ*を使用することです。Firefoxで実際の問題と回避方法を[このJSBinの例で見てください](http://jsbin.com/yabek/4/)。
-Should you wish to go the second route, just don't set a `line-height` and use *only* `padding` to vertically align button text. [View this JS Bin example](http://jsbin.com/yabek/4/) in Firefox to see the original problem and the workaround.
 
 **グッドニュース!** *[これについての修正](https://bugzilla.mozilla.org/show_bug.cgi?id=697451#c43)がFirefox 30に含まれているようです。これは私たち自身の未来にとっていいニュースですが、古いバージョンでは修正されてないことに気をつけてください。*
 
@@ -232,7 +231,6 @@ input[type="text"],
 <a name="position-explained"></a>
 ### position の説明
 `position: fixed;`を使用した要素はブラウザのビューポートに相対して配置されます。`position: absolute;`を使用した要素は、`static`以外（`relative`、`absolute`、`fixed`）で配置されている最も近い親要素に相対して配置されます。
-Elements with `position: fixed;` are placed relative to the browser viewport. Elements with `position: absolute;` are placed relative to their closest parent with a position other than `static` (e.g., `relative`, `absolute`, or `fixed`).
 
 
 <a name="position-width"></a>
